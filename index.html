@@ -1,11 +1,272 @@
 <!DOCTYPE html>
 <html>
+ </p>
 
+            <a
+                href="https://www.charitywater.org/"
+                class="gift-button donation-cta"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                DONATE TODAY
+            </a>
+        </section>
+
+        <footer>
+            <p>Clean water changes everything.</p>
+            <p>Learn more at charitywater.org</p>
+        </footer>
+
+    </main>
+
+</body>
+</html>
 <head>
   <title>My Web Page</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
+/* Basic page setup */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #ffffff;
+}
+
+/* Main landing page */
+.landing-page {
+    width: 96%;
+    max-width: 1400px;
+    min-height: 95vh;
+    margin: 20px auto;
+    padding: 25px 4%;
+    background-color: #78aab8;
+}
+
+/* Navigation bar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    padding-bottom: 22px;
+    border-bottom: 3px solid #ffffff;
+}
+
+.logo {
+    color: #ffffff;
+    font-family: Georgia, serif;
+    font-size: 22px;
+    letter-spacing: 3px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.logo-icon {
+    color: #ffcc00;
+    font-size: 25px;
+}
+
+.nav-link {
+    color: #111111;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ffffff;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+/* Yellow donation buttons */
+.gift-button {
+    display: inline-block;
+    padding: 14px 23px;
+    border-radius: 30px;
+    background-color: #ffcc00;
+    color: #111111;
+    font-weight: bold;
+    text-decoration: none;
+    transition: transform 0.3s ease,
+                background-color 0.3s ease;
+}
+
+.gift-button:hover {
+    background-color: #ffe066;
+    transform: translateY(-3px);
+}
+
+/* Main hero section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 45px 0 60px;
+}
+
+.hero-text {
+    flex: 1;
+    min-width: 0;
+}
+
+.hero-text h1 {
+    margin-bottom: 22px;
+    font-size: clamp(36px, 5.6vw, 60px);
+    line-height: 1.13;
+    font-weight: 800;
+}
+
+.hero-text p {
+    max-width: 520px;
+    font-size: 21px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.hero-image {
+    flex: 1;
+    min-width: 0;
+}
+
+.hero-image img {
+    display: block;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: transform 0.4s ease;
+}
+
+.hero-image img:hover {
+    transform: scale(1.02);
+}
+
+.mobile-gift-button {
+    display: none;
+}
+
+/* Additional donation section */
+.donation-section {
+    padding: 45px 20px;
+    text-align: center;
+    background-color: #ffffff;
+    color: #222222;
+    border-radius: 8px;
+}
+
+.donation-section h2 {
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.donation-section p {
+    max-width: 650px;
+    margin: 0 auto 25px;
+    line-height: 1.7;
+}
+
+.donation-cta {
+    border: none;
+}
+
+footer {
+    padding: 25px 0 5px;
+    text-align: center;
+    line-height: 1.8;
+}
+
+/* Tablet and mobile layouts */
+@media (max-width: 760px) {
+    .landing-page {
+        width: 100%;
+        margin: 0 auto;
+        padding: 22px 6%;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+        gap: 18px;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .nav-actions {
+        gap: 15px;
+    }
+
+    .nav-link {
+        font-size: 12px;
+    }
+
+    .navbar > .nav-link {
+        display: none;
+    }
+
+    .gift-button {
+        padding: 11px 15px;
+        font-size: 12px;
+    }
+
+    .hero {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 35px 0;
+        gap: 25px;
+    }
+
+    .hero-text h1 {
+        font-size: clamp(36px, 9vw, 52px);
+    }
+
+    .hero-text p {
+        font-size: 17px;
+    }
+
+    .hero-image img {
+        height: auto;
+        max-height: 350px;
+    }
+
+    .mobile-gift-button {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 13px 20px;
+        border-radius: 30px;
+        background-color: #ffcc00;
+        color: #111111;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .donation-section h2 {
+        font-size: 25px;
+    }
+}
+
+
+
+4. Add your image
 <body>
 </body>
 </html>
+<img src="img/clean-water.jpg"
+     alt="A child collecting water">
